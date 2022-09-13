@@ -19,8 +19,9 @@
 # Create the account.
     useradd -m $KULLANICI -c "$REALNAME" -s /bin/bash
 # Check to see if the useradd command succeeded.
-    id $KULLANICI
-    sleep 3
+    if [[ "$?" -eq 0 ]]; then
+        echo -e "Kullanıcı oluşturuldu." 
+    fi
 # We don't want to tell the user that an account was created when it hasn't been.
 
 if [[ "$?" -ne 0 ]]
@@ -39,4 +40,4 @@ fi
 # Force password change on first login.
     chage --lastday=0 $KULLANICI
 # Display the username, password, and the host where the user was created.
- echo -e "Username: $KULLANICI \n Password: $PAROLA"
+ echo -e "Username: $KULLANICI\nPassword: $PAROLA"
