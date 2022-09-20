@@ -10,7 +10,7 @@ Description: |
   connections on port 80 and ssh port 22 from 
   anywhere. Roman Numerals Converter Application 
   is downloaded from my Public Github repository,
-  then deployed on Apache Web Server. 
+  then deployed on EC2. 
   Also, Application can start after every reboot.
  
 Parameters:
