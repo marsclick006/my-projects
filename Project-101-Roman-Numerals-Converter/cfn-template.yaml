@@ -52,7 +52,7 @@ Resources:
         yum install git -y
         mkdir /home/ec2-user/roman-numerals-converter/
         chmod 777 /home/ec2-user/roman-numerals-converter/
-        git clone https://github.com/marsclick006/marsclick006-Project-101-Roman-Numerals-Converter.git /home/ec2-user/roman-numerals-converter/
+        git clone https://"TOKEN"@github.com/marsclick006/marsclick006-Project-101-Roman-Numerals-Converter.git /home/ec2-user/roman-numerals-converter/
         cd /home/ec2-user/roman-numerals-converter/
         nohup python3 app.py > log.txt 2>&1 &
         echo "cd /home/ec2-user/roman-numerals-converter/ && sudo nohup python3 app.py > log.txt 2>&1 &" > startup.sh
